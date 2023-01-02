@@ -36,5 +36,5 @@ module "sg__ssh" {
     },
   ]
 
-  tags = merge(local.remote_states["network"].tags, { Name = format("%s-SSH", local.name) })
+  tags = merge(local.common_tags, { Name = format("%s-SSH", local.name) })
 }

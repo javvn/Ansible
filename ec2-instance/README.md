@@ -12,6 +12,7 @@
 
 | Name | Version |
 |------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.48.0 |
 | <a name="provider_local"></a> [local](#provider\_local) | 2.2.3 |
 | <a name="provider_terraform"></a> [terraform](#provider\_terraform) | n/a |
 
@@ -25,7 +26,11 @@
 
 | Name | Type |
 |------|------|
+| [aws_instance.amazon](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
+| [aws_instance.ubuntu](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
 | [local_file.foo](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
+| [aws_ami.amazon](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
+| [aws_ami.ubuntu](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
 | [terraform_remote_state.this](https://registry.terraform.io/providers/hashicorp/terraform/latest/docs/data-sources/remote_state) | data source |
 
 ## Inputs
@@ -39,5 +44,6 @@
 | Name | Description |
 |------|-------------|
 | <a name="output_config"></a> [config](#output\_config) | n/a |
+| <a name="output_ec2_instances"></a> [ec2\_instances](#output\_ec2\_instances) | n/a |
 | <a name="output_remote_state_network"></a> [remote\_state\_network](#output\_remote\_state\_network) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
