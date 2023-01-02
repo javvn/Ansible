@@ -12,12 +12,14 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_local"></a> [local](#provider\_local) | n/a |
+| <a name="provider_local"></a> [local](#provider\_local) | 2.2.3 |
 | <a name="provider_terraform"></a> [terraform](#provider\_terraform) | n/a |
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_sg__ssh"></a> [sg\_\_ssh](#module\_sg\_\_ssh) | tedilabs/network/aws//modules/security-group | 0.24.0 |
 
 ## Resources
 
