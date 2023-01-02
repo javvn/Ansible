@@ -1,5 +1,5 @@
 locals {
-  azs = ["${var.region}a", "${var.region}c"]
+  azs = ["${var.region}a"]
 
   tags = {
     Terraform   = var.is_terraform
