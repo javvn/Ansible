@@ -1,6 +1,10 @@
 # output "vpc" {
 #   value = module.vpc
 # }
+
+output "region" {
+  value = var.region
+}
 output "name" {
   value = module.vpc.name
 }
