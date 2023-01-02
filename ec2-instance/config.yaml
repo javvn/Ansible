@@ -1,6 +1,0 @@
-context: {}
-
-remote_states:
-  'network':
-    organization: 'jawn'
-    workspace: 'practice-cloud-backend'

@@ -35,3 +35,10 @@ output "remote_state_network" {
     public_subnets  = local.public_subnet_groups
   }
 }
+
+output "ec2_instances" {
+  value = {
+    amazon = [resource.aws_instance.amazon[*].id]
+    ubuntu = [resource.aws_instance.ubuntu[*].id]
+  }
+}

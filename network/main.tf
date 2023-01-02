@@ -1,3 +1,10 @@
+################################################
+# Check out file for State.
+################################################
+resource "local_file" "joo" {
+  content  = "joo !"
+  filename = "${path.module}/joo.bar"
+}
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.18.1"
