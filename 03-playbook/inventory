@@ -1,0 +1,11 @@
+[amazon]
+amazon1 ansible_host=13.124.23.46 ansible_user=ec2-user
+amazon2 ansible_host=43.200.254.137 ansible_user=ec2-user
+
+[ubuntu]
+ubuntu1 ansible_host=52.78.169.214 ansible_user=ubuntu
+ubuntu2 ansible_host=3.36.92.225 ansible_user=ubuntu
+
+[linux:children]
+amazon
+ubuntu
