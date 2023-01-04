@@ -1,7 +1,7 @@
 ---
 - name: Install Nginx on Ubuntu
   hosts: ubuntu
-  become: ture
+  become: true
   tasks:
     - name: 'Install Nginx'
       apt:
@@ -19,7 +19,7 @@
   become: true
   tasks:
     - name: 'Enable Nginx repository provided by Amazon'
-      command: 'amazon-linux-extra enable nginx1'
+      command: 'amazon-linux-extras enable nginx1'
 
     - name: 'Install Nginx'
       yum:
