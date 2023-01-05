@@ -1,0 +1,5 @@
+[ubuntu]
+ubuntu1 ansible_host= ansible_user=ubuntu user_name=jawn user_comment="from inventory" user_shell=/bin/bash user_uid=777
+
+[linux:children]
+ubuntu
