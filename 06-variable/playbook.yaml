@@ -1,0 +1,11 @@
+---
+- name: Variable
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: 'Create a user'
+      user:
+        name: 'jawn'
+        comment: 'hard coding'
+        shell: '/bin/bash'
+        uid: '7777'
