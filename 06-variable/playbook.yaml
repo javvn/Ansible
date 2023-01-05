@@ -5,7 +5,7 @@
   tasks:
     - name: 'Create a user'
       user:
-        name: 'jawn'
-        comment: 'hard coding'
-        shell: '/bin/bash'
-        uid: '7777'
+        name: '{{user_name}}'
+        comment: '{{user_comment}}'
+        shell: '{{user_shell}}'
+        uid: '{{user_uid}}'
