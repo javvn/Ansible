@@ -2,6 +2,11 @@
 - name: Variable
   hosts: ubuntu
   become: true
+  vars:
+    user_name: 'jawn'
+    user_comment: 'from playbook vars'
+    user_shell: '/bin/bash'
+    user_uid: '7777'
   tasks:
     - name: 'Create a user'
       user:
