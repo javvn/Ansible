@@ -1,5 +1,5 @@
 [ubuntu]
-ubuntu1 ansible_host= ansible_user=ubuntu user_name=jawn user_comment="from inventory" user_shell=/bin/bash user_uid=777
+ubuntu1 ansible_host=3.39.253.32 ansible_user=ubuntu user_name=jawn user_comment="from inventory" user_shell=/bin/bash user_uid=777
 
 [linux:children]
 ubuntu
