@@ -1,0 +1,45 @@
+---
+- name: Variable
+  hosts: ubuntu
+  become: true
+  vars:
+    tags:
+      Name: 'Debug'
+      Environment: 'Test'
+      Owner: 'jawn'
+    users:
+      - name: john
+        shell: /bin/bash
+      - name: alice
+        shell: /bin/sh
+      - name: claud
+        shell: /bin/bash
+      - name: henry
+        shell: /bin/sh
+      - name: jeremy
+        shell: /bin/bash
+      - name: may
+        shell: /bin/sh
+
+  tasks:
+    - name: 'Create groups'
+      group:
+        name: '{{ item }}'
+        state: 'present'
+      with_items:
+        - backend
+        - frontend
+        - devops
+
+    - name: 'Create a user'
+      user:
+        name: '{{item.name}}'
+        shell: '{{item.shell}}'
+        comment: 'Jawn DevOps'
+        state: 'present'
+      loop: '{{users}}'
+
+    - name: 'Debug data'
+      debug:
+        msg: '{{item.key}} : {{item.value}}'
+      loog: '{{tags | dic2items}}'
