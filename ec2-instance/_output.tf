@@ -1,24 +1,24 @@
-# output "amazon_instance" {
-#   value = [
-#     for instance in aws_instance.amazon : {
-#       public_ip   = instance.public_ip
-#       public_dns  = instance.public_dns
-#       private_ip  = instance.private_ip
-#       private_dns = instance.private_dns
-#     }
-#   ]
-# }
+output "amazon_instance" {
+  value = [
+    for instance in aws_instance.amazon : {
+      public_ip = instance.public_ip
+      #       public_dns  = instance.public_dns
+      #       private_ip  = instance.private_ip
+      private_dns = instance.private_dns
+    }
+  ]
+}
 
-# output "ubuntu_instance" {
-#   value = [
-#     for instance in aws_instance.ubuntu : {
-#       public_ip   = instance.public_ip
-#       public_dns  = instance.public_dns
-#       private_ip  = instance.private_ip
-#       private_dns = instance.private_dns
-#     }
-#   ]
-# }
+output "ubuntu_instance" {
+  value = [
+    for instance in aws_instance.ubuntu : {
+      public_ip = instance.public_ip
+      #       public_dns  = instance.public_dns
+      #       private_ip  = instance.private_ip
+      private_dns = instance.private_dns
+    }
+  ]
+}
 
 # output "file_name" {
 #   value = data.local_file.foo.content
@@ -36,9 +36,9 @@ output "remote_state_network" {
   }
 }
 
-output "ec2_instances" {
-  value = {
-    amazon = [resource.aws_instance.amazon[*].id]
-    ubuntu = [resource.aws_instance.ubuntu[*].id]
-  }
-}
+# output "ec2_instances" {
+#  value = {
+#     amazon = [resource.aws_instance.amazon[*].id]
+#    ubuntu = [resource.aws_instance.ubuntu[*].id]
+#  }
+#}

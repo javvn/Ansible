@@ -43,7 +43,8 @@
 
 | Name | Description |
 |------|-------------|
+| <a name="output_amazon_instance"></a> [amazon\_instance](#output\_amazon\_instance) | n/a |
 | <a name="output_config"></a> [config](#output\_config) | n/a |
-| <a name="output_ec2_instances"></a> [ec2\_instances](#output\_ec2\_instances) | n/a |
 | <a name="output_remote_state_network"></a> [remote\_state\_network](#output\_remote\_state\_network) | n/a |
+| <a name="output_ubuntu_instance"></a> [ubuntu\_instance](#output\_ubuntu\_instance) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
